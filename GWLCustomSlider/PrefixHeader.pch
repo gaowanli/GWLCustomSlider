@@ -1,0 +1,16 @@
+
+//
+//  PrefixHeader.pch
+//  CustomSlider
+//
+//  Created by 高万里 on 15/6/6.
+//  Copyright (c) 2015年 高万里. All rights reserved.
+//
+
+#ifndef CustomSlider_PrefixHeader_pch
+#define CustomSlider_PrefixHeader_pch
+
+#define kSCREENW ([UIScreen mainScreen].bounds.size.width)
+#define kSCREENH ([UIScreen mainScreen].bounds.size.height)
+
+#endif
