@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52DC7C801B29771500E01486 /* GWLCustomSliderNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7C7F1B29771500E01486 /* GWLCustomSliderNew.m */; };
+		52DC7C831B2977CE00E01486 /* UIView+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7C821B2977CE00E01486 /* UIView+Add.m */; };
+		52DC7C861B297AC300E01486 /* DemoNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DC7C851B297AC300E01486 /* DemoNewViewController.m */; };
 		AD5788381B2420250059FDF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5788371B2420250059FDF7 /* main.m */; };
 		AD57883B1B2420250059FDF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD57883A1B2420250059FDF7 /* AppDelegate.m */; };
 		AD57883E1B2420250059FDF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD57883D1B2420250059FDF7 /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52DC7C7E1B29771500E01486 /* GWLCustomSliderNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWLCustomSliderNew.h; sourceTree = "<group>"; };
+		52DC7C7F1B29771500E01486 /* GWLCustomSliderNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWLCustomSliderNew.m; sourceTree = "<group>"; };
+		52DC7C811B2977CE00E01486 /* UIView+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Add.h"; sourceTree = "<group>"; };
+		52DC7C821B2977CE00E01486 /* UIView+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Add.m"; sourceTree = "<group>"; };
+		52DC7C841B297AC300E01486 /* DemoNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoNewViewController.h; sourceTree = "<group>"; };
+		52DC7C851B297AC300E01486 /* DemoNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoNewViewController.m; sourceTree = "<group>"; };
 		AD5788321B2420250059FDF7 /* GWLCustomSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GWLCustomSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD5788361B2420250059FDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5788371B2420250059FDF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,15 +93,21 @@
 		AD5788341B2420250059FDF7 /* GWLCustomSlider */ = {
 			isa = PBXGroup;
 			children = (
+				52DC7C811B2977CE00E01486 /* UIView+Add.h */,
+				52DC7C821B2977CE00E01486 /* UIView+Add.m */,
 				AD5788391B2420250059FDF7 /* AppDelegate.h */,
 				AD57883A1B2420250059FDF7 /* AppDelegate.m */,
 				AD57883C1B2420250059FDF7 /* ViewController.h */,
 				AD57883D1B2420250059FDF7 /* ViewController.m */,
 				AD57885B1B2420A70059FDF7 /* DemoViewController.h */,
 				AD57885C1B2420A70059FDF7 /* DemoViewController.m */,
+				52DC7C841B297AC300E01486 /* DemoNewViewController.h */,
+				52DC7C851B297AC300E01486 /* DemoNewViewController.m */,
 				AD5788351B2420250059FDF7 /* Supporting Files */,
 				AD57885F1B2420C60059FDF7 /* GWLCustomSlider.h */,
 				AD5788601B2420C60059FDF7 /* GWLCustomSlider.m */,
+				52DC7C7E1B29771500E01486 /* GWLCustomSliderNew.h */,
+				52DC7C7F1B29771500E01486 /* GWLCustomSliderNew.m */,
 			);
 			path = GWLCustomSlider;
 			sourceTree = "<group>";
@@ -223,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DC7C861B297AC300E01486 /* DemoNewViewController.m in Sources */,
 				AD57883E1B2420250059FDF7 /* ViewController.m in Sources */,
 				AD5788611B2420C60059FDF7 /* GWLCustomSlider.m in Sources */,
 				AD57883B1B2420250059FDF7 /* AppDelegate.m in Sources */,
+				52DC7C801B29771500E01486 /* GWLCustomSliderNew.m in Sources */,
+				52DC7C831B2977CE00E01486 /* UIView+Add.m in Sources */,
 				AD5788381B2420250059FDF7 /* main.m in Sources */,
 				AD57885D1B2420A70059FDF7 /* DemoViewController.m in Sources */,
 			);
@@ -409,6 +427,7 @@
 				AD5788571B2420260059FDF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD5788581B2420260059FDF7 /* Build configuration list for PBXNativeTarget "GWLCustomSliderTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +436,7 @@
 				AD57885A1B2420260059FDF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

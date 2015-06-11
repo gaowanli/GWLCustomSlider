@@ -8,6 +8,7 @@
 
 #import "DemoViewController.h"
 #import "GWLCustomSlider.h"
+#import "DemoNewViewController.h"
 
 @interface DemoViewController () <GWLCustomSliderDelegate>
 
@@ -21,7 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"CustomSlider";
+    self.title = @"第一版 CustomSlider";
+    
+    UIBarButtonItem *nextBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(nextBarButtonItemDidClick)];
+    self.navigationItem.rightBarButtonItem = nextBarButtonItem;
     
     NSArray *titleArray = @[@"10",@"20",@"30",@"40",@"50",@"60",@"70",@"80",@"90",@"100",@"更多"];
     GWLCustomSlider *customSlider = [GWLCustomSlider customSliderWithTitleArray:titleArray withDefalutMinValueIndex:0 withDefalutMaxValueIndex:5 andMinMaxCanSame:YES];
@@ -29,6 +33,11 @@
     customSlider.delegate = self;
     [self.view addSubview:customSlider];
     self.customSlider = customSlider;
+}
+
+- (void)nextBarButtonItemDidClick {
+    DemoNewViewController *customSliderNewViewController = [[DemoNewViewController alloc]init];
+    [self.navigationController pushViewController:customSliderNewViewController animated:YES];
 }
 
 #pragma mark - CustomSliderDelegate

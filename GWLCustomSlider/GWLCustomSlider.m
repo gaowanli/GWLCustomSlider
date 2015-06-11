@@ -7,6 +7,7 @@
 //
 
 #import "GWLCustomSlider.h"
+#import "UIView+Add.h"
 
 #define kPADDING  0.5 // 按钮间距
 #define kMARGIN   10  // 边距
@@ -27,67 +28,6 @@
 @property(nonatomic,strong)NSMutableArray *titleLabelArray;
 /**一个刻度的长度*/
 @property(nonatomic,assign)CGFloat scale;
-
-@end
-
-@interface UIView (Add)
-
-@property(nonatomic,assign) CGFloat X;
-@property(nonatomic,assign) CGFloat Y;
-@property(nonatomic,assign) CGFloat width;
-@property(nonatomic,assign) CGFloat height;
-
-@end
-
-@implementation UIView (Add)
-
-- (void)setY:(CGFloat)Y
-{
-    CGRect frameT = self.frame;
-    frameT.origin.y = Y;
-    self.frame = frameT;
-}
-
-- (CGFloat)Y
-{
-    return self.frame.origin.y;
-}
-
-- (void)setX:(CGFloat)X
-{
-    CGRect frameT = self.frame;
-    frameT.origin.x = X;
-    self.frame = frameT;
-}
-
-- (CGFloat)X
-{
-    return self.frame.origin.x;
-}
-
--(void)setWidth:(CGFloat)width
-{
-    CGRect frameT = self.frame;
-    frameT.size.width = width;
-    self.frame = frameT;
-}
-
-- (CGFloat)width
-{
-    return self.frame.size.width;
-}
-
-- (void)setHeight:(CGFloat)height
-{
-    CGRect frameT = self.frame;
-    frameT.size.height = height;
-    self.frame = frameT;
-}
-
-- (CGFloat)height
-{
-    return self.frame.size.height;
-}
 
 @end
 

@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"UISlider";
+    self.title = @"系统 UISlider";
     
     UISlider *intValueSlider = [[UISlider alloc]initWithFrame:CGRectMake(10, 100, kSCREENW-20, 44)];
     intValueSlider.maximumValue = 100;
